@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    
+    <h1 id="title">Monk Mode Survey Form</h1>
+    <p id="description">Give us your thought about Monk Mode</p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="John" required></label>
+            <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="example@email.com" required></label>
+            <label for="number" id="number-label">Age: <input id="number" type="number" min="15" max="100" placeholder="23" required></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Where did you discover about Monk Mode for the first time? 
+                <select id="dropdown" name="dropdown">
+                    <option value="">(select)</option>
+                    <option value="1">Friend, family</option>
+                    <option value="2">YouTube</option>
+                    <option value="3">Blog post</option>
+                    <option value="4">Tiktok</option>
+                    <option value="5">Twitter(X)</option>
+                </select>
+            </label>
+            <label>Have you done Monk Mode?</label>
+            <label><input type="radio" name="yes-no" value="yes"> Yes</label>
+            <label><input type="radio" name="yes-no" value="no"> No</label>
+            <p>If Yes for how log did you done it?</p>
+            <label><input type="checkbox" value="1"> 1 Week</label>
+            <label><input type="checkbox" value="3"> 3 Week</label>
+            <label><input type="checkbox" value="12"> 12 Week</label>
+            <label><input type="checkbox" value="24"> 24 Week</label>
+        </fieldset>
+        <fieldset>
+            <label>Tell us about your opinion and experience on Monk Mode? 
+                <textarea placeholder="Mt experience on Monk Mode is ..." rows="4" cols="40"></textarea>
+            </label>    
+        </fieldset>
+        <input id="submit" Value="Submit" type="submit">
+    </form>
+
 </body>
 </html>
